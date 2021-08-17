@@ -21,17 +21,18 @@ jobs:
     runs-on: [self-hosted, nitish-mac-runner]
     #nitish-mac-runne
     #runs-on: nitish-mac-runner
-
+    
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - env: 
+          MAVEN_PATH: 'export PATH=/Users/nitishkumar/Desktop/jenkins/maven/apache-maven-3.8.1/bin:$PATH'
       - uses: actions/checkout@v2
-
+   
       # Runs a single command using the runners shell
       - name: Run a maven build
         run: |
-           export PATH=/Users/nitishkumar/Desktop/jenkins/maven/apache-maven-3.8.1/bin:$PATH,
            mvn package && 
            echo $(pwd)
            

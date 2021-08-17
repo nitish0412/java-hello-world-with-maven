@@ -31,11 +31,13 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-           echo Hello, world!
-           export PATH=/Users/nitishkumar/Desktop/jenkins/maven/apache-maven-3.8.1/bin:$PATH
+           echo Hello, world!,
+           export PATH=/Users/nitishkumar/Desktop/jenkins/maven/apache-maven-3.8.1/bin:$PATH,
+           mvn -v
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          mvn -v
+          echo "test"
+          

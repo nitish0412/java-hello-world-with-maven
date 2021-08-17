@@ -1,5 +1,6 @@
 # Building Java Projects with Maven new
 This guide walks you through using Maven to build a simple Java project.
+[![CI](https://github.com/nitish0412/java-hello-world-with-maven/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/nitish0412/java-hello-world-with-maven/actions/workflows/main.yml)
 
 ## What you’ll build
 You’ll create an application that provides the time of day and then build it with Maven.

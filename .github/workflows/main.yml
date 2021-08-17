@@ -33,12 +33,11 @@ jobs:
         run: |
            echo Hello, world!,
            export PATH=/Users/nitishkumar/Desktop/jenkins/maven/apache-maven-3.8.1/bin:$PATH,
-           mvn -v
-
+           mvn build
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo "test"
+          echo "test",
           mvn -v
           

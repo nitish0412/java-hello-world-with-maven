@@ -40,5 +40,17 @@ jobs:
         run: |
           echo Add other actions to build,
           echo "test"
-          
+  
+  
+  deploy:
+    # The type of runner that the job will run on
+      runs-on: [self-hosted, nitish-mac-runner]
+    #nitish-mac-runne
+    #runs-on: nitish-mac-runner 
+      steps:
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo "test"
+  
           

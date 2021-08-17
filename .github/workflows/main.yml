@@ -29,12 +29,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        env :
-          MAVEN_PATH: '/Users/nitishkumar/Desktop/jenkins/maven/apache-maven-3.8.1'
+       # env :
+        #  MAVEN_PATH: '/Users/nitishkumar/Desktop/jenkins/maven/apache-maven-3.8.1'
    
       # Runs a single command using the runners shell
       - name: Run a maven build
         run: |
+           export PATH=/Users/nitishkumar/Desktop/jenkins/maven/apache-maven-3.8.1/bin:$PATH,
            mvn package && 
            echo $(pwd)
            

@@ -19,6 +19,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: [self-hosted, nitish-mac-runner]
+    #nitish-mac-runne
     #runs-on: nitish-mac-runner
 
 

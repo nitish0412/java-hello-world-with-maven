@@ -35,7 +35,7 @@ jobs:
       - name: Run a maven build
         run: |
            export PATH=/Users/nitishkumar/Desktop/jenkins/maven/apache-maven-3.8.1/bin:$PATH,
-           mvn package && 
+           mvn package;
            echo $(pwd)
            
       # Runs a set of commands using the runners shell
